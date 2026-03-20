@@ -63,35 +63,210 @@
     <!-- Action Buttons -->
     <section class="mb-6">
         <div class="grid grid-cols-3 gap-4">
-            <div class="bg-gray-100 rounded-xl flex flex-col items-center justify-center p-4 cursor-pointer">
+
+            <!-- Add Money btn -->
+            <div id="AddMoney-btn" class="bg-gray-100 rounded-xl flex flex-col items-center justify-center p-4 cursor-pointer">
                 <img src="assets/opt-1.png" alt="Add Money" class="w-10 mb-2">
                 <span class="text-[12px] font-medium text-gray-800">Add Money</span>
             </div>
-            <div class="bg-gray-100 rounded-xl flex flex-col items-center justify-center p-4 cursor-pointer">
+
+            <!-- Cashout btn -->
+            <div id="cashout-btn" class="bg-gray-100 rounded-xl flex flex-col items-center justify-center p-4 cursor-pointer">
                 <img src="assets/opt-2.png" alt="Cashout" class="w-10 mb-2">
                 <span class="text-[12px] font-medium text-gray-800">Cashout</span>
             </div>
-            <div class="bg-gray-100 rounded-xl flex flex-col items-center justify-center p-4 cursor-pointer">
+            
+
+            <!-- Transfer Money -->
+            <div id="TransferMoney-btn" class="bg-gray-100 rounded-xl flex flex-col items-center justify-center p-4 cursor-pointer">
                 <img src="assets/opt-3.png" alt="Transfer Money" class="w-10 mb-2">
                 <span class="text-[12px] font-medium text-gray-800">Transfer Money</span>
             </div>
-            <div class="bg-gray-100 rounded-xl flex flex-col items-center justify-center p-4 cursor-pointer">
+
+
+            <!-- Get Bonus btn -->
+            <div id="GetBonus-btn" class="bg-gray-100 rounded-xl flex flex-col items-center justify-center p-4 cursor-pointer">
                 <img src="assets/opt-4.png" alt="Get Bonus" class="w-10 mb-2">
                 <span class="text-[12px] font-medium text-gray-800">Get Bonus</span>
             </div>
-            <div class="bg-gray-100 rounded-xl flex flex-col items-center justify-center p-4 cursor-pointer">
+
+
+            <!-- Pay Bill btn -->
+            <div id="PayBill-btn" class="bg-gray-100 rounded-xl flex flex-col items-center justify-center p-4 cursor-pointer">
                 <img src="assets/opt-5.png" alt="Pay Bill" class="w-10 mb-2">
                 <span class="text-[12px] font-medium text-gray-800">Pay Bill</span>
             </div>
-            <div class="bg-gray-100 rounded-xl flex flex-col items-center justify-center p-4 cursor-pointer">
+
+
+            <!-- Transactions btn -->
+            <div id="Transactions-btn" class="bg-gray-100 rounded-xl flex flex-col items-center justify-center p-4 cursor-pointer">
                 <img src="assets/opt-6.png" alt="Transactions" class="w-10 mb-2">
                 <span class="text-[12px] font-medium text-gray-800">Transactions</span>
             </div>
         </div>
     </section>
 
+
+    
+            <!-- Cash Out Form -->
+              <section id="cashout-section" class="hidden mt-6">
+                <div class="bg-gray-100 p-5 rounded-xl">
+                    <h3 class="font-semibold mb-4">Cash Out</h3>
+                       
+                       <label for="password" class="">Agent Number</label>
+                       <input type="text" placeholder="Enter 11 digit number"
+                        class="w-full mb-3 p-3 rounded-full bg-gray-200 outline-none">
+
+                        <label for="password">Amount</label>
+                       <input type="number" placeholder="Enter amount to withdraw"
+                        class="w-full mb-3 p-3 rounded-full bg-gray-200 outline-none">
+                        
+                        <label for="password">Pin Number</label>
+                       <input  type="password" placeholder="Enter 4 digit pin number"
+                         class="w-full mb-4 p-3 rounded-full bg-gray-200 outline-none">
+
+                       <button class="w-full bg-purple-700 text-white py-3 rounded-full">
+                         Withdraw Money
+                       </button>
+                </div>
+              </section>
+
+             <!-- Transfer Money form -->
+              <section id="sendMoney-section" class="hidden mt-6">
+                <div class="bg-gray-100 p-5 rounded-xl">
+                    <h3 class="font-semibold mb-4">Transfer Money</h3>
+                       
+                       <label for="password" class="">User Account Number</label>
+                       <input type="text" placeholder="Enter 11 digit number"
+                        class="w-full mb-3 p-3 rounded-full bg-gray-200 outline-none">
+
+                        <label for="password">Amount</label>
+                       <input type="number" placeholder="Enter amount to withdraw"
+                        class="w-full mb-3 p-3 rounded-full bg-gray-200 outline-none">
+                        
+                        <label for="password">Pin Number</label>
+                       <input  type="password" placeholder="Enter 4 digit pin number"
+                         class="w-full mb-4 p-3 rounded-full bg-gray-200 outline-none">
+
+                       <button class="w-full bg-purple-700 text-white py-3 rounded-full">
+                        Send Now
+                       </button>
+                </div>
+              </section>
+
+              <section id="Bonus-section" class="hidden mt-6">
+                <div class="bg-gray-100 p-5 rounded-xl">
+                    <h3 class="font-semibold mb-4">Get Bonus</h3>
+                       
+                       <label for="text" class="">Enter your bonus coupon</label>
+                       <input type="text" placeholder="Enter your bonus coupon"
+                        class="w-full mb-3 p-3 rounded-full bg-gray-200 outline-none">
+
+                        <button class="w-full bg-purple-700 text-white py-3 rounded-full">
+                        Get Bonus
+                       </button>
+               </div>
+              </section>
+
+
+
+
+ <!-- Add Money Form -->
+<section id="addmoney-section" class="hidden mt-6">
+    <div class="bg-gray-100 p-5 rounded-2xl">
+
+        <h3 class="text-lg font-semibold mb-4">Add Money</h3>
+
+        <!-- Select Bank -->
+        <div class="mb-3">
+            <label class="text-sm text-gray-600">Select A Bank</label>
+            <select class="w-full mt-1 p-3 rounded-full bg-gray-200 outline-none">
+                <option disabled selected>Select bank</option>
+                <option>DBBL</option>
+                <option>BRAC Bank</option>
+                <option>Islami Bank</option>
+            </select>
+        </div>
+
+        <!-- Account Number -->
+        <div class="mb-3">
+            <label class="text-sm text-gray-600">Bank Account Number</label>
+            <input type="text" placeholder="Enter 11 digit account number"
+                class="w-full mt-1 p-3 rounded-full bg-gray-200 outline-none">
+        </div>
+
+        <!-- Amount -->
+        <div class="mb-3">
+            <label class="text-sm text-gray-600">Amount to Add</label>
+            <input type="number" placeholder="Add Amount"
+                class="w-full mt-1 p-3 rounded-full bg-gray-200 outline-none">
+        </div>
+
+        <!-- Pin -->
+        <div class="mb-4">
+            <label class="text-sm text-gray-600">Pin Number</label>
+            <input type="password" placeholder="Enter 4 digit pin number"
+                class="w-full mt-1 p-3 rounded-full bg-gray-200 outline-none">
+        </div>
+
+        <!-- Button -->
+        <button class="w-full bg-purple-700 text-white py-3 rounded-full font-semibold">
+            Add Money
+        </button>
+
+    </div>
+</section>
+
+
+
+ <!-- Pay bil Form -->
+<section id="PayBill-section" class="hidden mt-6">
+    <div class="bg-gray-100 p-5 rounded-2xl">
+
+        <h3 class="text-lg font-semibold mb-4">Pay Bill</h3>
+
+        <!-- Select Bank -->
+        <div class="mb-3">
+            <label class="text-sm text-gray-600">Select A Bank</label>
+            <select class="w-full mt-1 p-3 rounded-full bg-gray-200 outline-none">
+                <option disabled selected>Select bank</option>
+                <option>DBBL</option>
+                <option>BRAC Bank</option>
+                <option>Islami Bank</option>
+            </select>
+        </div>
+
+        <!-- Account Number -->
+        <div class="mb-3">
+            <label class="text-sm text-gray-600">Bank Account Number</label>
+            <input type="text" placeholder="Enter 11 digit account number"
+                class="w-full mt-1 p-3 rounded-full bg-gray-200 outline-none">
+        </div>
+
+        <!-- Amount -->
+        <div class="mb-3">
+            <label class="text-sm text-gray-600">Amount to Pay</label>
+            <input type="number" placeholder="Pay Amount"
+                class="w-full mt-1 p-3 rounded-full bg-gray-200 outline-none">
+        </div>
+
+        <!-- Pin -->
+        <div class="mb-4">
+            <label class="text-sm text-gray-600">Pin Number</label>
+            <input type="password" placeholder="Enter 4 digit pin number"
+                class="w-full mt-1 p-3 rounded-full bg-gray-200 outline-none">
+        </div>
+
+        <!-- Button -->
+        <button class="w-full bg-purple-700 text-white py-3 rounded-full font-semibold">
+            Pay Now
+        </button>
+
+    </div>
+</section>
+
     <!-- Latest Payment Section -->
-    <section>
+    <section id="Transactions" class="hidden">
         <div class="flex justify-between items-center mb-3">
             <h3 class="text-lg font-semibold">Latest Payment</h3>
             <a href="#" class="text-purple-600 text-sm">View All</a>
